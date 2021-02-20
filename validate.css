@@ -1,0 +1,12 @@
+body{
+    background-color: black;
+}
+.container{
+    height: 300px;
+    width: 500px;
+    background-color: rgb(241, 197, 75);
+    margin-top: 50px;
+    border-radius: 20px;
+    
+    
+}

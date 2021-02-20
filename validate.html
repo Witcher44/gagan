@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="validate.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container"> 
+        <strong>Registration Form</strong>   
+        <form name="valid" onsubmit=" return validF()">
+            <div class="mb-3">
+    
+              <input type="email" class="form-control" name="user" placeholder="Email Address" id="exampleInputEmail1" aria-describedby="emailHelp">
+             <span class="text-danger" id="email"></span>
+               
+            </div>
+            <div class="mb-3">
+              <input type="password" name="password" placeholder="Password" class="form-control" id="exampleInputPassword1">
+              <span class="text-danger" id="pass"></span>          
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+
+
+    </div>
+    <script>
+        
+        function validF(){
+            var x = document.valid.user.value;
+            var y= document.valid.password.value;
+            
+            if(x==""){
+                document.getElementById('email').innerHTML="*** fill mail "
+                document. getElementById('exampleInputEmail1'). style. border ="5px solid red"
+ 
+                return false;
+
+            }
+            if(y==""){
+                document.getElementById('pass').innerHTML="****fill password"
+                document. getElementById('exampleInputPassword1'). style. border ="5px solid red"
+ 
+                return false;
+            }
+
+
+           
+           
+        }
+        
+    </script>
+    
+</body>
+</html>
